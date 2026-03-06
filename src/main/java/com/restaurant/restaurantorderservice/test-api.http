@@ -1,0 +1,7 @@
+### Get all orders
+GET http://localhost:8080/orders
+Accept: application/json
+
+### Get single order
+GET http://localhost:8080/orders/101
+Accept: application/json
