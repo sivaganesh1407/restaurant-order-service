@@ -1,5 +1,15 @@
 HELP.md
 target/
+
+### Local secrets and env (never commit) ###
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.p12
+application-local.properties
+application-secrets.properties
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

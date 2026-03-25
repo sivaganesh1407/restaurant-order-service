@@ -1,12 +1,14 @@
 # Restaurant Order Service
 
+> **Disclaimer:** This repository is an independent learning and portfolio project. It is not affiliated with, endorsed by, or sponsored by any employer or commercial entity. All code and documentation are provided as-is for educational purposes.
+
 Spring Boot REST API for managing restaurant orders.
 
 ## Tech Stack
 
-- Java 21
+- Java 17+ (required to compile and run; Spring Boot 4 baseline)
 - Spring Boot
-- Maven
+- Maven (wrapper included; downloads from Maven Central)
 - REST APIs
 - JSON
 
@@ -26,27 +28,32 @@ POST /orders
 
 ## Screenshots
 
-### Project Structure
-![Project Structure](screenshots/project-structure.png)
-
-### Orders API Response
-![Orders API](screenshots/orders-api.png)
-
-### Single Order API
-![Single Order](screenshots/single-order-api.png)
+Optional: add your own images under `screenshots/` if you want visuals in this README.
 
 ---
 
 ## Run the Project
 
-Clone the repository
+Prerequisites: [JDK 17 or newer](https://adoptium.net/) and network access to [Maven Central](https://repo.maven.apache.org/) (no private registry or corporate VPN required).
 
-git clone https://github.com/sivaganesh1407/restaurant-order-service.git
+Clone this repository (use your fork or clone URL).
 
-Run the application
+```bash
+git clone <your-repository-url>
+cd restaurant-order-service
+```
 
+Run the application (Maven wrapper uses the project’s pinned Maven version):
+
+```bash
+chmod +x mvnw   # once, if needed on Unix/macOS
+./mvnw spring-boot:run
+```
+
+Or, if you use a global Maven install:
+
+```bash
 mvn spring-boot:run
+```
 
-Open in browser
-
-http://localhost:8080/orders
+Open in a browser or HTTP client: `http://localhost:8080/orders`
